@@ -14,7 +14,7 @@ import pageObjectModels.HomePage;
 import testData.DataFile;
 import utilities.DriverUtilities;
 
-public class DeleteComputer {
+public class _04_DeleteComputer {
 	
 	DriverUtilities myDriverUtilities = new DriverUtilities();
 	WebDriver driver = myDriverUtilities.getDriver();
@@ -31,7 +31,7 @@ public class DeleteComputer {
 		HomePage.searchField(driver).sendKeys(DataFile.computerNameToDelete);
 		HomePage.filterByNameButton(driver).click();
 //		Select the top row in the result set of the main table
-		WebElement table = HomePage.mainTable(driver);
+		WebElement table = HomePage.mainTableNoHeader(driver);
 		WebElement tableRow = table.findElement(By.tagName("tr"));
 		WebElement tableColumn = tableRow.findElement(By.tagName("td"));
 //		Click on the value of the cell of the first column

@@ -16,7 +16,7 @@ import testData.DataFile;
 import testData.DropDownMenu;
 import utilities.DriverUtilities;
 
-public class UpdateComputer {
+public class _03_UpdateComputer {
 	
 	DriverUtilities myDriverUtilities = new DriverUtilities();
 	WebDriver driver = myDriverUtilities.getDriver();
@@ -33,7 +33,7 @@ public class UpdateComputer {
 		HomePage.searchField(driver).sendKeys(DataFile.computerNameToUpdate);
 		HomePage.filterByNameButton(driver).click();
 //		Select the top row in the result set of the main table
-		WebElement table = HomePage.mainTable(driver);
+		WebElement table = HomePage.mainTableNoHeader(driver);
 		WebElement tableRow = table.findElement(By.tagName("tr"));
 		WebElement tableColumn = tableRow.findElement(By.tagName("td"));
 //		Click on the value of the cell of the first column

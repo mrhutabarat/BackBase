@@ -6,6 +6,14 @@ import org.openqa.selenium.WebElement;
 
 public class EditPage {
 	
+	public static WebElement headerBanner(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"main\"]/h1"));
+	}
+	
+	public static WebElement smallTable(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"main\"]/form[1]/fieldset"));
+	}
+	
 	public static WebElement computerNameField(WebDriver driver) {
 		return driver.findElement(By.id("name"));
 	}

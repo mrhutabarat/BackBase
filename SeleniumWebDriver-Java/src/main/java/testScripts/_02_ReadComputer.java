@@ -6,6 +6,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -15,7 +16,7 @@ import testData.DataFile;
 import testData.DropDownMenu;
 import utilities.DriverUtilities;
 
-public class ReadComputer {
+public class _02_ReadComputer {
 	
 	DriverUtilities myDriverUtilities = new DriverUtilities();
 	WebDriver driver = myDriverUtilities.getDriver();
@@ -32,11 +33,22 @@ public class ReadComputer {
 		HomePage.searchField(driver).sendKeys(DataFile.computerNameToRead);
 		HomePage.filterByNameButton(driver).click();
 //		Select the top row in the result set of the main table
-		WebElement table = HomePage.mainTable(driver);
+		WebElement table = HomePage.mainTableNoHeader(driver);
 		WebElement tableRow = table.findElement(By.tagName("tr"));
 		WebElement tableColumn = tableRow.findElement(By.tagName("td"));
 //		Click on the value of the cell of the first column
 		driver.findElement(By.linkText(tableColumn.getText())).click();
+		
+//		Verify the Edit page
+		String actualHeader = EditPage.headerBanner(driver).getText();
+		Assert.assertEquals(DataFile.expectedHeaderBanner, actualHeader);
+		
+//		Verify the small table
+		try {
+			EditPage.smallTable(driver).isDisplayed();
+		} catch (NoSuchElementException e) {
+			System.out.println("Table does not exist.");
+		}
 		
 //		Verify the reading of an existing computer
 //		1. Computer name field
@@ -52,6 +64,13 @@ public class ReadComputer {
 		Assert.assertEquals(DataFile.companyToRead, DropDownMenu.showDropDownResult(driver));
 		
 		EditPage.cancelButton(driver).click();
+		
+//		Verify main table on main page
+		try {
+			HomePage.mainTable(driver).isDisplayed();
+		} catch (NoSuchElementException e) {
+			System.out.println("This is not main page.");
+		}
 
 	}
 	

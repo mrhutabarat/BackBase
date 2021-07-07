@@ -14,7 +14,7 @@ import pageObjectModels.HomePage;
 import testData.DataFile;
 import utilities.DriverUtilities;
 
-public class CreateComputer {
+public class _01_CreateComputer {
 
 	DriverUtilities myDriverUtilities = new DriverUtilities();
 	WebDriver driver = myDriverUtilities.getDriver();
@@ -49,9 +49,9 @@ public class CreateComputer {
 
 	}
 	
-	@After
-	public void tearDown() {
-		driver.quit();
-	}
+//	@After
+//	public void tearDown() {
+//		driver.quit();
+//	}
 
 }

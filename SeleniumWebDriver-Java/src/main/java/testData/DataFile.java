@@ -12,6 +12,7 @@ public class DataFile {
 	public static String expectedMessageToCreate = "Done! Computer " + computerNameToCreate + " has been created";
 	
 //	Data to Read
+	public static String expectedHeaderBanner = "Edit computer";
 	public static String computerNameToRead = "Amiga";
 	public static String introducedDateToRead = "1985-01-01";
 	public static String discontinuedDateToRead = "";

@@ -1,0 +1,31 @@
+Precondition: User opens the website
+
+╔════╦═══════════════════════════╦════════════════════════════════╗
+║ NO ║ STEP                      ║ EXPECTED RESULT                ║
+╠════╬═══════════════════════════╬════════════════════════════════╣
+║  1 ║ User enters "Amiga" in    ║ The search box                 ║
+║    ║ search box                ║ is populated with the data     ║
+╠════╬═══════════════════════════╬════════════════════════════════╣
+║  2 ║ User clicks on            ║ User sees the result in a      ║
+║    ║ "Filter by name" button   ║ table                          ║
+╠════╬═══════════════════════════╬════════════════════════════════╣
+║  3 ║ User clicks on "Amiga"    ║ User sees "Edit Computer" page ║
+║    ║ link on the first row     ║ and a small table exists       ║
+╠════╬═══════════════════════════╬════════════════════════════════╣
+║  4 ║ User visually verifies    ║ "Amiga" value is in the field  ║
+║    ║ "Computer name" field     ║                                ║
+╠════╬═══════════════════════════╬════════════════════════════════╣
+║  5 ║ User visually verifies    ║ "1985-01-01" value is in the   ║
+║    ║ "Introduced date" field   ║ field                          ║
+╠════╬═══════════════════════════╬════════════════════════════════╣
+║  6 ║ User visually verifies    ║ The field is empty             ║
+║    ║ "Discontinued date" field ║                                ║
+╠════╬═══════════════════════════╬════════════════════════════════╣
+║  7 ║ User visually verifies    ║ "Amiga Corporation" value is   ║
+║    ║ "Company" dropdown field  ║ in the field                   ║
+╠════╬═══════════════════════════╬════════════════════════════════╣
+║  8 ║ User clicks on            ║ User sees the main table       ║
+║    ║ "Cancel" button           ║ on the HomePage                ║
+╚════╩═══════════════════════════╩════════════════════════════════╝
+
+Post-condition: User closes the website

@@ -23,6 +23,10 @@ public class HomePage {
 	}
 	
 	public static WebElement mainTable(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"main\"]/table"));
+	}
+	
+	public static WebElement mainTableNoHeader(WebDriver driver) {
 		return driver.findElement(By.xpath("//*[@id=\"main\"]/table/tbody"));
 	}
 	
