@@ -53,6 +53,7 @@ public class ReadComputer {
 		
 		EditPage.cancelButton(driver).click();
 	
+		System.out.println("Test Push");
 	}
 	
 	@After
