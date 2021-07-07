@@ -52,8 +52,7 @@ public class ReadComputer {
 		Assert.assertEquals(DataFile.companyToRead, DropDownMenu.showDropDownResult(driver));
 		
 		EditPage.cancelButton(driver).click();
-	
-		System.out.println("Test Push");
+
 	}
 	
 	@After
