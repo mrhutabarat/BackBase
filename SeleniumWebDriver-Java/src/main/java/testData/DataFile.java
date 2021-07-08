@@ -2,7 +2,10 @@ package testData;
 
 public class DataFile {
 	
+//	Data HomePage
 	public static String homePageURL = "https://computer-database.herokuapp.com/computers";
+	public static String headerBanner = "Play sample application - Computer database";
+	
 	
 //	Data to Create
 	public static String computerNameToCreate = "TI-99/4A";

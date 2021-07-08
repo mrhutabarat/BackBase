@@ -1,0 +1,42 @@
+Precondition: User opens the website.
+
+╔════╦═════════════════════════════════╦════════════════════════════════════════╗
+║ NO ║ STEP                            ║ EXPECTED RESULT                        ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 01 ║ User opens the website.         ║ The Main page is on display.           ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 02 ║ User types "ThinkPad 340 CSE"   ║ The search box is populated with the   ║
+║    ║ in the search box.              ║ data.                                  ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 02 ║ User clicks on "Filter by       ║ The main table is on display with      ║
+║    ║ name" button.                   ║ "ThinkPad 340 CSE" on the second row.  ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 03 ║ User clicks on "ThinkPad        ║ "Edit computer" page is on display.    ║
+║    ║ 340 CSE" link.                  ║                                        ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 04 ║ User verifies the "Computer     ║ "ThinkPad 340 CSE" is in the field.    ║
+║    ║ name" text field.               ║                                        ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 05 ║ User verifies the "Introduced   ║ The field is empty                     ║
+║    ║ date" text field.               ║                                        ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 06 ║ User types "1994-05-01" in the  ║ "1994-05-01" is in "Introduced date"   ║
+║    ║ "Introduced date" field.        ║ text field.                            ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 06 ║ User verifies the "Discontinued ║ The field is empty.                    ║
+║    ║ date" text field.               ║                                        ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 07 ║ User types "1996-06-30" in the  ║ "1996-06-03" is in "Discontinued date" ║
+║    ║ "Discontinued date" field.      ║ text field.                            ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 08 ║ User verifies the "Company"     ║ The field is empty.                    ║
+║    ║ dropdown.                       ║                                        ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 09 ║ User selects "Lenovo Group"     ║ "Lenovo Group" is in "Company"         ║
+║    ║ from the dropdown.              ║ dropdown.                              ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 10 ║ User clicks on "Save this       ║ The Main page is on display.           ║
+║    ║ computer" button.               ║                                        ║
+╚════╩═════════════════════════════════╩════════════════════════════════════════╝
+
+Post-condition: User closes the website.

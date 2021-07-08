@@ -1,0 +1,21 @@
+Precondition: User opens the website.
+
+╔════╦══════════════════════════════╦══════════════════════════════════════╗
+║ NO ║ STEP                         ║ EXPECTED RESULT                      ║
+╠════╬══════════════════════════════╬══════════════════════════════════════╣
+║ 01 ║ User opens the website.      ║ The Main page is on display.         ║
+╠════╬══════════════════════════════╬══════════════════════════════════════╣
+║ 02 ║ User types "TI-99/4A" in the ║ The search box is populated with the ║
+║    ║ search box.                  ║ data.                                ║
+╠════╬══════════════════════════════╬══════════════════════════════════════╣
+║ 02 ║ User clicks on "Filter by    ║ The main table is on display with    ║
+║    ║ name" button.                ║ "TI-99/4A" on the second row.        ║
+╠════╬══════════════════════════════╬══════════════════════════════════════╣
+║ 03 ║ User clicks on "TI-99/4A"    ║ "Edit computer" page is on display.  ║
+║    ║ link.                        ║                                      ║
+╠════╬══════════════════════════════╬══════════════════════════════════════╣
+║ 04 ║ User clicks on "Delete this  ║ The Main page is on display.         ║
+║    ║ computer" button.            ║                                      ║
+╚════╩══════════════════════════════╩══════════════════════════════════════╝
+
+Post-condition: User closes the website.

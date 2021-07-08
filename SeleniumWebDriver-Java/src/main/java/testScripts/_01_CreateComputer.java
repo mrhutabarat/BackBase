@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -27,7 +28,22 @@ public class _01_CreateComputer {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		
+//		Verify the Main page
+		try {
+			HomePage.mainTable(driver).isDisplayed();
+		} catch (NoSuchElementException e) {
+			System.out.println("This is not main page.");
+			driver.quit();
+		}
+		
 		HomePage.addComputer(driver).click();
+		
+//		Verify the "Add a computer" page
+		try {
+			EditPage.smallTable(driver).isDisplayed();
+		} catch (NoSuchElementException e) {
+			System.out.println("Table does not exist.");
+		}
 		
 //		Fill out the form
 //		1. Computer name field
@@ -49,9 +65,9 @@ public class _01_CreateComputer {
 
 	}
 	
-//	@After
-//	public void tearDown() {
-//		driver.quit();
-//	}
+	@After
+	public void tearDown() {
+		driver.quit();
+	}
 
 }

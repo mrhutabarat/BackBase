@@ -1,25 +1,29 @@
-Pre-condition: User opens the website
+Pre-condition: User opens the website.
 
-╔════╦══════════════════════════════════╦═════════════════════════════════════╗
-║ NO ║ STEP                             ║ EXPECTED RESULT                     ║
-╠════╬══════════════════════════════════╬═════════════════════════════════════╣
-║  1 ║ User clicks on "Add a new        ║ "Add a computer" form               ║
-║    ║ computer" button                 ║ is on display                       ║
-╠════╬══════════════════════════════════╬═════════════════════════════════════╣
-║  2 ║ User types "TI-99/4A" in         ║ "Computer name" field               ║
-║    ║ "Computer name" field            ║ is populated with the data          ║
-╠════╬══════════════════════════════════╬═════════════════════════════════════╣
-║  3 ║ User types "1981-06-01" in       ║ "Introduced date" field             ║
-║    ║ "Introduced date" field          ║ is populated with the data          ║
-╠════╬══════════════════════════════════╬═════════════════════════════════════╣
-║  4 ║ User types "1984-03-31"          ║ "Discontinued date" field           ║
-║    ║ in "Discontinued date" field     ║ is populated with the data          ║
-╠════╬══════════════════════════════════╬═════════════════════════════════════╣
-║  5 ║ User selects "Texas Instruments" ║ "Company" dropdown field            ║
-║    ║ in the "Company" dropdown field  ║ is populated with the data          ║
-╠════╬══════════════════════════════════╬═════════════════════════════════════╣
-║  6 ║ User clicks on                   ║ User sees the message "Done!        ║
-║    ║ "Create this computer" button    ║ Computer TI-99/4A has been created" ║
-╚════╩══════════════════════════════════╩═════════════════════════════════════╝
+╔════╦═══════════════════════════════╦══════════════════════════════════════════╗
+║ NO ║ STEP                          ║ EXPECTED RESULT                          ║
+╠════╬═══════════════════════════════╬══════════════════════════════════════════╣
+║ 01 ║ User opens the website.       ║ The Main page is on display.             ║
+╠════╬═══════════════════════════════╬══════════════════════════════════════════╣
+║ 02 ║ User clicks on "Add a new     ║ "Add a computer" page is on display.     ║
+║    ║ computer" button.             ║                                          ║
+╠════╬═══════════════════════════════╬══════════════════════════════════════════╣
+║ 03 ║ User types "TI-99/4A" in      ║ The "Computer name" field is populated   ║
+║    ║ "Computer name" text field.   ║ with the data.                           ║
+╠════╬═══════════════════════════════╬══════════════════════════════════════════╣
+║ 04 ║ User types "1981-06-01" in    ║ The "Introduced date" field is populated ║
+║    ║ "Introduced date" text field. ║ with the data.                           ║
+╠════╬═══════════════════════════════╬══════════════════════════════════════════╣
+║ 05 ║ User types "1984-03-31" in    ║ The "Discontinued date" field is         ║
+║    ║ "Discontinued date" text      ║ populated with the data.                 ║
+║    ║ field.                        ║                                          ║
+╠════╬═══════════════════════════════╬══════════════════════════════════════════╣
+║ 06 ║ User selects "Texas           ║ The "Company" field is populated with    ║
+║    ║ Instruments" in "Company"     ║ the data.                                ║
+║    ║ dropdown field.               ║                                          ║
+╠════╬═══════════════════════════════╬══════════════════════════════════════════╣
+║ 07 ║ User clicks on "Create this   ║ The Main page is on display.             ║
+║    ║ computer" button.             ║                                          ║
+╚════╩═══════════════════════════════╩══════════════════════════════════════════╝
 
-Post-condition: User closes the website
+Post-condition: User closes the website.

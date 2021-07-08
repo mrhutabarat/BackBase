@@ -5,6 +5,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class HomePage {
+	
+	public static WebElement headerBanner(WebDriver driver) {
+		return driver.findElement(By.xpath("//html/body/header/h1"));
+	}
 
 	public static WebElement searchField(WebDriver driver) {
 		return driver.findElement(By.id("searchbox"));

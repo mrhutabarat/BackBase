@@ -6,6 +6,7 @@ import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -26,6 +27,14 @@ public class _04_DeleteComputer {
 		
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
+		
+//		Verify the Main page
+		try {
+			HomePage.mainTable(driver).isDisplayed();
+		} catch (NoSuchElementException e) {
+			System.out.println("This is not main page.");
+			driver.quit();
+		}
 		
 //		Fill out the Search box
 		HomePage.searchField(driver).sendKeys(DataFile.computerNameToDelete);

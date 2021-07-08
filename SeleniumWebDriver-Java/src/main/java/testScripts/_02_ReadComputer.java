@@ -29,6 +29,14 @@ public class _02_ReadComputer {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		
+//		Verify the Main page
+		try {
+			HomePage.mainTable(driver).isDisplayed();
+		} catch (NoSuchElementException e) {
+			System.out.println("This is not main page.");
+			driver.quit();
+		}
+		
 //		Fill out the Search box
 		HomePage.searchField(driver).sendKeys(DataFile.computerNameToRead);
 		HomePage.filterByNameButton(driver).click();

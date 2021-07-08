@@ -1,31 +1,32 @@
-Precondition: User opens the website
+Precondition: User opens the website.
 
-╔════╦═══════════════════════════╦════════════════════════════════╗
-║ NO ║ STEP                      ║ EXPECTED RESULT                ║
-╠════╬═══════════════════════════╬════════════════════════════════╣
-║  1 ║ User enters "Amiga" in    ║ The search box                 ║
-║    ║ search box                ║ is populated with the data     ║
-╠════╬═══════════════════════════╬════════════════════════════════╣
-║  2 ║ User clicks on            ║ User sees the result in a      ║
-║    ║ "Filter by name" button   ║ table                          ║
-╠════╬═══════════════════════════╬════════════════════════════════╣
-║  3 ║ User clicks on "Amiga"    ║ User sees "Edit Computer" page ║
-║    ║ link on the first row     ║ and a small table exists       ║
-╠════╬═══════════════════════════╬════════════════════════════════╣
-║  4 ║ User visually verifies    ║ "Amiga" value is in the field  ║
-║    ║ "Computer name" field     ║                                ║
-╠════╬═══════════════════════════╬════════════════════════════════╣
-║  5 ║ User visually verifies    ║ "1985-01-01" value is in the   ║
-║    ║ "Introduced date" field   ║ field                          ║
-╠════╬═══════════════════════════╬════════════════════════════════╣
-║  6 ║ User visually verifies    ║ The field is empty             ║
-║    ║ "Discontinued date" field ║                                ║
-╠════╬═══════════════════════════╬════════════════════════════════╣
-║  7 ║ User visually verifies    ║ "Amiga Corporation" value is   ║
-║    ║ "Company" dropdown field  ║ in the field                   ║
-╠════╬═══════════════════════════╬════════════════════════════════╣
-║  8 ║ User clicks on            ║ User sees the main table       ║
-║    ║ "Cancel" button           ║ on the HomePage                ║
-╚════╩═══════════════════════════╩════════════════════════════════╝
+╔════╦═════════════════════════════════╦════════════════════════════════════════╗
+║ NO ║ STEP                            ║ EXPECTED RESULT                        ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 01 ║ User opens the website.         ║ The Main page is on display.           ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 02 ║ User types "Amiga" in the       ║ The search box is populated with the   ║
+║    ║ search box.                     ║ data.                                  ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 02 ║ User clicks on "Filter by       ║ The main table is on display with      ║
+║    ║ name" button.                   ║ "Amiga" on the second row.             ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 03 ║ User clicks on "Amiga" link.    ║ "Edit computer" page is on display.    ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 04 ║ User verifies the "Computer     ║ "Amiga" is in the field.               ║
+║    ║ name" text field.               ║                                        ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 05 ║ User verifies the "Introduced   ║ "1985-01-01" is in the field.          ║
+║    ║ date" text field.               ║                                        ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 06 ║ User verifies the "Discontinued ║ The field is empty.                    ║
+║    ║ date" text field.               ║                                        ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 07 ║ User verifies the "Company"     ║ "Amiga Corporation" is in the dropdown ║
+║    ║ dropdown.                       ║ field.                                 ║
+╠════╬═════════════════════════════════╬════════════════════════════════════════╣
+║ 08 ║ User clicks on "Cancel"         ║ The Main page is on display.           ║
+║    ║ button.                         ║                                        ║
+╚════╩═════════════════════════════════╩════════════════════════════════════════╝
 
-Post-condition: User closes the website
+Post-condition: User closes the website.
