@@ -1,0 +1,14 @@
+Edge Case 1: Tester can get the content of the main table and verify the number of
+             computers found. A bug can be found when the numbers are not matched.
+
+Edge Case 2: Tester can test the column sorting capability of the main table.
+
+Edge Case 3: Tester can verify that a computer is not created.
+
+Edge Case 4: Tester can verify that a computer cannot be read.
+
+Edge Case 5: Tester can verify that a computer is not updated.
+
+Edge Case 6: Tester can verify that a computer cannot be deleted.
+
+Edge Case 7: Tester can test the Previous and Next links.

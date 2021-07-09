@@ -1,0 +1,19 @@
+This automation test takes Page Object Model approach.
+
+It is one of design patterns in Selenium WebDriver.
+
+It is being used mainly for 2 reasons:
+
+(1) The design pattern reduces code duplication.
+(2) The design pattern improves test case maintenance.
+
+For regression suite, 4 automation scripts have been selected.
+They are, in this order:
+(1) _01_CreateComputer.java
+    To test a creation of a new computer
+(2) _02_ReadComputer.java
+    To test a reading of an existing computer
+(3) _03_UpdateComputer.java
+    To test an update of an existing computer
+(4) _04_DeleteComputer.java
+    To test a deletion of an existing computer
